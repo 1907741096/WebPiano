@@ -34,11 +34,12 @@
 <script type="text/javascript" src="/WebPiano/Public/js/common.js"></script>
 <script>
     function play() {
-        if (opernName === "千本樱") {
+        console.log(opernName)
+        if (opernName == "千本樱") {
             playqby()
-        } else if (opernName === "天空之城") {
+        } else if (opernName == "天空之城") {
             playtkzc()
-        } else if (opernName === "亡灵序曲") {
+        } else if (opernName == "亡灵序曲") {
             playwlxq()
         }
     }
