@@ -30,6 +30,7 @@ class OpernController extends Controller{
             $data=$_GET;
             $this->assign('name',$data['name']);
         }
+        $data['status']=array('eq',1);
         $page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
         $pageSize = $_REQUEST['pageSize'] ? $_REQUEST['pageSize'] : 9;
         $operns = D("Opern")->getOpernByTime($data,$page,$pageSize);
@@ -51,6 +52,7 @@ class OpernController extends Controller{
             $data=$_GET;
             $this->assign('name',$data['name']);
         }
+        $data['status']=array('eq',1);
         $page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
         $pageSize = $_REQUEST['pageSize'] ? $_REQUEST['pageSize'] : 9;
         $operns = D("Opern")->getOpernByCount($data,$page,$pageSize);

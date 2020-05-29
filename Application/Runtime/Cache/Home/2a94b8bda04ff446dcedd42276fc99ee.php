@@ -321,7 +321,7 @@
 			
 		<?php else: ?>
 			<div class="ts">快去挑选喜欢的曲谱吧！</div>
-			<img src="/WebPiano/Public/image/leimu.jpg" height="360"><?php endif; ?>
+			<img src="/WebPiano/Public/image/22.png" height="350"><?php endif; ?>
 	</div>
 	<div class="index_opern_right">
 		<button onclick="funStart(this);" id="btnStart" disabled>录制</button>
