@@ -135,10 +135,12 @@ $(".opern_mid #collect").click(function(){
     },"JSON");
 });
 
+var opernName = ""
 $(".oleft #opern_l").click(function(){
     var thumb = $(this).attr('attr-thumb');
     var opern=document.getElementById("opern_b");
     opern.src=thumb;
+    opernName = $(this).attr('attr-name');
 });
 
 $("#listorder").click(function(){
