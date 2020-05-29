@@ -135,7 +135,10 @@ $(".opern_mid #collect").click(function(){
     },"JSON");
 });
 
-var opernName = ""
+var opernName
+var opern=document.getElementById("opern_b");
+opernName = opern.attr('attr-name')
+
 $(".oleft #opern_l").click(function(){
     var thumb = $(this).attr('attr-thumb');
     var opern=document.getElementById("opern_b");
