@@ -1,11 +1,10 @@
 var n=50;
 function playwlxq(){
-		for(var i=0;i<100;i++){
-		console.log(n);
-		sleep(1000);
-	}
+	sleep(1000);
+	playwlxqleft();
+	playwlxqright();
 }
-function playleft(){
+function playwlxqleft(){
 	var t=n*20;
 	setTimeout("kbsdown(72)",t);
 	t+=(n*7);
@@ -115,20 +114,20 @@ function playleft(){
 	t+=(n*15);
 	setTimeout("kbsup(50)",t);
 	t+=(n);
-	// setTimeout("kbsdown()",t);
-	// t+=(n*7);
-	// setTimeout("kbsup()",t);
-	// t+=(n);
-	// setTimeout("kbsdown()",t);
-	// t+=(n*7);
-	// setTimeout("kbsup()",t);
-	// t+=(n);
-	// setTimeout("kbsdown()",t);
-	// t+=(n*15);
-	// setTimeout("kbsup()",t);
-	// t+=(n);
+	setTimeout("kbsdown()",t);
+	t+=(n*7);
+	setTimeout("kbsup()",t);
+	t+=(n);
+	setTimeout("kbsdown()",t);
+	t+=(n*7);
+	setTimeout("kbsup()",t);
+	t+=(n);
+	setTimeout("kbsdown()",t);
+	t+=(n*15);
+	setTimeout("kbsup()",t);
+	t+=(n);
 }
-function playright(){
+function playwlxqright(){
 	var t=n*44;
 	setTimeout("kbsdown(102)",t);
 	t+=(n*3);

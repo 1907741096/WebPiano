@@ -1,10 +1,10 @@
 var n=50;
 function playtkzc(){
-	playright();
-	playleft();
+	playtkzcright();
+	playtkzcleft();
 }
 
-function playright(){
+function playtkzcright(){
 	var t=1000;
 	setTimeout("kbsdown(109)",t);
 	t+=220;
@@ -437,7 +437,7 @@ function playright(){
 	setTimeout("kbsup(107)",t);
 	setTimeout("kbsup(109)",t);
 }
-function playleft(){
+function playtkzcleft(){
 	var t=1000;
 	t+=400;
 	setTimeout("kbsdown(78)",t);

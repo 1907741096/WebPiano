@@ -3,8 +3,8 @@ function playqby(){
 	n=50;
 	n/=sd/10;
 	if(n<0) n=-n;
-	playleft();
-	playright();
+	playqbyleft();
+	playqbyright();
 }
 function stopplay(){
 	for(var i=0;i<number;i++){
@@ -13,7 +13,7 @@ function stopplay(){
 }
 var number;
 var numArr=[];
-function playleft(){
+function playqbyleft(){
 	var t=1000;
 	numArr[number++] =setTimeout("kbsdown(83)",t);
 	numArr[number++] =setTimeout("kbsdown(72)",t);
@@ -673,7 +673,7 @@ function playleft(){
 	if(time<t)
 		time=t;
 }
-function playright(){
+function playqbyright(){
 	var t=1000;
 	numArr[number++] =setTimeout("kbsdown(40)",t);
 	numArr[number++] =setTimeout("kbsdown(110)",t);
