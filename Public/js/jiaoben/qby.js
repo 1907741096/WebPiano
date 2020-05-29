@@ -1,4 +1,4 @@
-function play(){
+function playqby(){
 	number=0;
 	n=50;
 	n/=sd/10;
