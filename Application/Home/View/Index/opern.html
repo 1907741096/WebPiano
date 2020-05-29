@@ -33,8 +33,11 @@
 <script src="/WebPiano/Public/js/mp3/recordmp3.js"></script>
 <script type="text/javascript" src="/WebPiano/Public/js/common.js"></script>
 <script>
+
+    var opern = document.getElementById("opern_b");
+    opernName = opern.attr('attr-name')
+
     function play() {
-        console.log(opernName)
         if (opernName == "千本樱") {
             playqby()
         } else if (opernName == "天空之城") {
