@@ -1,5 +1,5 @@
 var n=50;
-function play(){
+function playtkzc(){
 	playright();
 	playleft();
 }
